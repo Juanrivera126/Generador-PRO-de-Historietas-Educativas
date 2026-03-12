@@ -1,0 +1,245 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 30px;
+}
+
+.panel {
+    background: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin-top: 0;
+    color: #ffaa00;
+    font-size: 1.1em;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #aaa;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+/* FORMULARIOS */
+select,
+button,
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2b2b2b;
+    color: white;
+    font-size: 14px;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00aaff;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    background: #101010;
+    color: #00ffaa;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 6px;
+    line-height: 1.4;
+    transition: all 0.3s;
+}
+
+/* Estilo específico para la descripción opcional */
+#descripcionTema {
+    height: 100px;
+    margin-top: 5px;
+    background: #2b2b2b;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #444;
+    resize: vertical;
+}
+
+/* BOTONES */
+button {
+    background: #00aaff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0088cc;
+}
+
+button.secondary {
+    background: #444;
+}
+
+button.secondary:hover {
+    background: #666;
+}
+
+button.approve {
+    background: #28a745;
+}
+
+button.approve:hover {
+    background: #218838;
+}
+
+.download-btn {
+    background: #28a745;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
+
+/* Botones por diapositiva */
+.slide-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.slide-actions button {
+    margin-top: 0;
+    flex: 1;
+}
+
+/* API KEY CONTAINER */
+.api-key-container {
+    border: 1px solid #00aaff;
+    background: #111a22;
+}
+
+.api-key-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.api-key-row button {
+    margin-top: 8px;
+    width: auto;
+    white-space: nowrap;
+}
+
+/* GRID DE IMÁGENES */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.slide-container {
+    background: #000;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00ffaa;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* ZIP CONTAINER */
+#zip-container {
+    margin-top: 40px;
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#zip-container button {
+    max-width: 500px;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.9em;
+}
